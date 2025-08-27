@@ -1,0 +1,421 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 60px auto;
+  position: relative;
+}
+.container .top-banner img {
+  width: 97%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.container .content {
+  display: flex;
+  gap: 20px;
+}
+.container .content .profile {
+  width: 25%;
+  margin: 0 20px;
+}
+.profile .user-info {
+  margin: 12px;
+}
+.profile .user-info img {
+  width: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 210px;
+  z-index: 1;
+}
+.profile .user-info .user-name {
+  padding-top: 30px;
+}
+.profile .user-info .user-name p {
+  color: #888;
+}
+.profile .des {
+  color: #888;
+  padding-bottom: 20px;
+}
+.profile .des .links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.profile .des a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.profile .numbers {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+.profile .numbers h4 {
+  font-size: 15px;
+  font-weight: bolder;
+}
+.profile .numbers p {
+  font-size: 15px;
+  color: #888;
+}
+.profile .profile-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.profile .profile-buttons button {
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+.profile .profile-buttons .follow {
+  padding: 10px;
+  background-color: rgb(86, 86, 255);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.cards {
+  margin: 30px;
+  width: 70%;
+}
+.cards .card-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards .card-links .apply {
+    margin-right: 5%;
+}
+.cards .card-links button {
+  padding: 8px;
+  border-radius: 12px;
+}
+.cards .card-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.cards .card {
+  flex: 1 1 calc(30% - 15px);
+  max-width: calc(30% - 15px);
+  margin: 10px ;
+  border-radius: 20px;
+}
+.cards .card img {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px;
+}
+.cards .card h5 {
+  padding: 15px;
+}
+.cards .card .price {
+  display: flex;
+  gap: 20px;
+  padding: 0 15px;
+}
+.cards .card .price p {
+  color: #888;
+}
+.cards .card .guest {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 5px;
+}
+.cards .card .guest img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.cards .card .likes-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tooltip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+  background-color: rgb(146 99 249);
+  padding: 11px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid rgb(211, 211, 211);
+  color: white;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(244, 240, 240);
+}
+
+.svgIcon {
+  width: 16px;
+  height: auto;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.3em 0.6em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  color: rgb(0, 0, 0);
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background-color: rgb(255, 255, 255);
+}
+
+.tooltip-container:hover .tooltip {
+  top: -100%;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.card-stats {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  padding: 0 8px;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #14171a;
+  margin-bottom: 6px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #657786;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.stat:not(:last-child) {
+  border-right: 1px solid #e1e8ed;
+}
+.box a {
+  color: #000;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.box-on {
+  background-color: #f5eaff;
+}
+.card-stat2 {
+  padding: 0px 0px;
+  background: white;
+}
+
+.card-stats1 {
+  justify-items: center;
+  background-color: white;
+  display: flex;
+  gap: 90px;
+}
+
+.spans {
+  position: relative;
+  top: 0%;
+  max-width: 30px;
+  margin: 10px;
+}
+
+/* The switch - the box around the slider */
+.comment-react {
+  align-items: center;
+  margin: 10px;
+  display: flex;
+  padding: 0px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  scale: 1;
+  width: 0px;
+}
+
+.comment-react button {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  margin: 10px;
+}
+
+.comment-react button:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  background: linear-gradient(to bottom right, #3598f5, blue);
+  border-radius: 50%;
+  z-index: 0;
+  transform: scale(0);
+  filter: blur(10px);
+}
+
+.comment-react button svg {
+  position: relative;
+  z-index: 9;
+}
+
+.comment-react button:hover:after {
+  animation: ripple 0.6s ease-in-out infinite;
+}
+
+.comment-react button:hover svg {
+  animation: ripple2 1s ease-in-out infinite;
+  fill: #f5356e;
+}
+
+.comment-react button:hover svg path {
+  stroke: #f5356e;
+  fill: #f5356e;
+}
+
+.comment-react hr {
+  width: 80%;
+  height: 1px;
+  background-color: #dfe1e6;
+  margin: auto;
+  border: 0;
+}
+
+.comment-react span {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 600;
+  color: #707277;
+  padding-right: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+
+  .container .content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .container .content .profile {
+    width: 100%;
+    margin: 0;
+  }
+
+  .profile .user-info img {
+    position: static;
+    margin-top: -40px;
+  }
+
+  .profile .user-info {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile .user-info .user-name {
+    padding-top: 10px;
+  }
+
+  .profile .numbers {
+    justify-content: center;
+  }
+
+  .profile .profile-buttons {
+    justify-content: center;
+  }
+
+  .cards {
+    margin: 15px 0;
+    width: 100%;
+  }
+  .cards .card-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .cards .card-links .pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .cards .card-content {
+    flex-direction: column;
+  }
+
+  .cards .card {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    }
+
+}
